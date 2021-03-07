@@ -1,0 +1,57 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.8;
+  font-size: 16px;
+  font-weight: 300;
+  background: $brand-white;
+  color: lighten($brand-black, 50%);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: $brand-lighter;
+  text-decoration: none;
+  @include transition(0.5s);
+
+  &:hover {
+    color: $brand-primary;
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+::-webkit-selection {
+  color: $brand-body-color;
+  background: $brand-selection-color;
+}
+
+::-moz-selection {
+  color: $brand-body-color;
+  background: $brand-selection-color;
+}
+
+::selection {
+  color: $brand-body-color;
+  background: $brand-selection-color;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+.is-visible {
+  display: block !important;
+
+}

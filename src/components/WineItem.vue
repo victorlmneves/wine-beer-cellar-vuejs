@@ -1,0 +1,71 @@
+<template>
+  <div class="wine-list">
+    <div
+      v-for="wine in wineList"
+      :key="wine.id"
+      class="wine-list__item"
+    >
+      <router-link
+        class="wine-list__link"
+        :to="{
+          name: 'WineDetails',
+          params: { 
+            id: wine.id 
+          }
+        }"
+      >
+        <img class="wine-list__image"
+          :alt="wine.name"
+          :src="`https://res.cloudinary.com/vitorneves/image/upload/v1614884127/wineChallenge/${wine.picture}`"
+        />
+        <div class="wine-list__info">
+          <h3 class="wine-list__name">{{wine.name}}</h3>
+        </div>
+      </router-link>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'WineItem',
+
+  props: {
+    wineList: Array
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+.wine-list {
+  display: grid;
+  grid-gap: 24px 16px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+  padding: 0 8px 24px 8px;
+
+  &__item {
+    margin: 0 4px 8px;
+    border: 1px solid #eee;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__info {
+    text-align: center;
+  }
+
+  &__name {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
