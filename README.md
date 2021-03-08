@@ -33,4 +33,19 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ___
 
-![Codecov](https://img.shields.io/codecov/c/github/victorlmneves/wine-beer-cellar-vuejs)
+#####Snyk Code Coverage and packages vulnerabilities report.
+
+✓ Tested 447 dependencies for known issues, no vulnerable paths found.
+
+File             |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
+-----------------|----------|----------|----------|----------|-------------------|
+All files        |    73.33 |       50 |     62.5 |    73.33 |                   |
+ Filters.vue     |       50 |      100 |    33.33 |       50 |             52,56 |
+ WineDetails.vue |    81.82 |       50 |       80 |    81.82 |             30,52 |
+
+Test Suites: 4 passed, 4 total
+Tests:       11 passed, 11 total
+Snapshots:   0 total
+Time:        3.908s
+Ran all test suites.
+✨  Done in 11.50s.
