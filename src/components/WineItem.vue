@@ -64,8 +64,12 @@ export default {
   }
 
   &__image {
-    width: 100%;
     height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 300px;
   }
 }
 </style>
