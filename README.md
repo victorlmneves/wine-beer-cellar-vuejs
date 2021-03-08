@@ -33,7 +33,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ___
 
-#####Snyk Code Coverage and packages vulnerabilities report.
+##### Snyk Code Coverage and packages vulnerabilities report.
 
 <img alt="Snyk Vulnerabilities for GitHub Repo" src="https://img.shields.io/snyk/vulnerabilities/github/victorlmneves/wine-beer-cellar-vuejs">
 
