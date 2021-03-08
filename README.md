@@ -35,6 +35,8 @@ ___
 
 #####Snyk Code Coverage and packages vulnerabilities report.
 
+<img alt="Snyk Vulnerabilities for GitHub Repo" src="https://img.shields.io/snyk/vulnerabilities/github/victorlmneves/wine-beer-cellar-vuejs">
+
 ✓ Tested 447 dependencies for known issues, no vulnerable paths found.
 
 File             |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
