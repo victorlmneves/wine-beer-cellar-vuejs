@@ -105,7 +105,9 @@ export default {
       const winesAux = [...wines]
 
       const wineListAux = winesAux.filter(wine => {
-        return wine.name.toLowerCase().includes(text.toLowerCase())
+        return wine.name.toLowerCase().includes(text.toLowerCase()) ||
+          wine.producer.toLowerCase().includes(text.toLowerCase()) ||
+          wine.year.toLowerCase().includes(text.toLowerCase())
       })
 
       commit('SET_AUX_WINE_LIST', wineListAux)
