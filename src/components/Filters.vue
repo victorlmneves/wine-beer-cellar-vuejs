@@ -43,10 +43,7 @@ export default {
   },
 
   methods: {
-    ...mapActions({
-      sortBY: 'wine/sortBY',
-      filterBY: 'wine/filterBY'
-    }),
+    ...mapActions(['sortBY', 'filterBY']),
 
     sort (event) {
       this.sortBY(event.target.value);
