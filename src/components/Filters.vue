@@ -64,7 +64,7 @@ export default {
   justify-content: flex-end;
   align-content: stretch;
   align-items: flex-start;
-  padding: 0 16px 16px;
+  padding: 0 $unit*4 $unit*4;
 
   &__wrap {
     order: 0;
@@ -77,18 +77,18 @@ export default {
       text-align: left;
     }
 
-    :not(:last-child) {
-      margin-right: 24px;
+    &:not(:last-child) {
+      margin-right: $unit*6;
     }
   }
 
   &__label {
-    padding-right: 8px;
+    padding-right: $unit*2;
   }
 
   &__search,
   &__select {
-    padding: 4px 8px;
+    padding: $unit $unit*2;
   }
 }
 </style>

@@ -39,17 +39,17 @@ export default {
 <style lang="scss" scoped>
 .wine-list {
   display: grid;
-  grid-gap: 24px 16px;
+  grid-gap: $unit*6 $unit*4;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   align-items: center;
   justify-content: space-between;
   justify-items: center;
-  padding: 0 8px 24px 8px;
+  padding: 0 $unit*4 $unit*6 $unit*4;
 
   &__item {
-    margin: 0 4px 8px;
+    margin: 0 $unit $unit*2;
     border: 1px solid #eee;
-    padding: 20px;
+    padding: $unit*5;
     height: 100%;
     width: 100%;
   }

@@ -69,35 +69,35 @@ export default {
 
 <style lang="scss" scoped>
 .wine {
-  padding: 0 8px 24px 8px;
+  padding: 0 $unit*2 $unit*6 $unit*2;
 
   &__item {
-    margin: 0 4px 8px;
+    margin: 0 $unit $unit*2;
     border: 1px solid #eee;
-    padding: 20px;
+    padding: $unit*5;
     height: 100%;
     display: flex;
   }
 
   &__info {
     text-align: left;
-    margin-right: 40px;
+    margin-right: $unit*10;
   }
 
   &__name {
-    font-size: 32px;
+    font-size: $unit*8;
     line-height: 1.2;
-    margin-bottom: 12px;
+    margin-bottom: $unit*3;
   }
 
   &__producer {
     color: #555;
     font-size: 24px;
     line-height: 1.2;
-    margin-bottom: 12px;
-    margin-top: 12px;
-    padding-bottom: 24px;
-    padding-top: 24px;
+    margin-bottom: $unit*3;
+    margin-top: $unit*3;
+    padding-bottom: $unit*6;
+    padding-top: $unit*6;
     border-bottom: 1px solid #eee;
     border-top: 1px solid #eee;
   }
@@ -106,7 +106,7 @@ export default {
     color: #333;
     font-size: 36px;
     line-height: 1;
-    margin-top: 24px;
+    margin-top: $unit*6;
   }
 
   &__image {

@@ -172,7 +172,7 @@ export default {
   width: 60%;
 
   &__form-group {
-    margin: 0 auto 20px;
+    margin: 0 auto $unit*5;
 
     &--column {
       display: flex;
@@ -189,12 +189,12 @@ export default {
   }
 
   &__input {
-    height: 36px;
+    height: $unit*9;
     display: inline-block;
     vertical-align: middle;
     width: 100%;
     color: $brand-gray;
-    padding: 8px;
+    padding: $unit*2;
     border: 1px solid rgb(218, 218, 218);
 
     &:focus {
@@ -212,7 +212,7 @@ export default {
     background: $brand-black;
     color: $brand-white;
     border: none;
-    padding: 16px;
+    padding: $unit*4;
     text-transform: uppercase;
     width: 100%;
   }
