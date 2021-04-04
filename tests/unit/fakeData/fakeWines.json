@@ -1,0 +1,62 @@
+[
+    {
+      "id": 1,
+      "name": "Magnum Quinta da Leda Tinto 1.5L",
+      "producer": "Casa Ferreirinha",
+      "grapes": "Touriga Franca, Touriga Nacional, Tinto Cão, Tinta Roriz",
+      "year": "2017",
+      "description": "Cor rubi profunda. Aroma intenso e muito complexo, destacando-se as notas florais de violeta, as notas balsâmicas - resina, cedro e caixa de tabaco -, pimenta e frutos vermelhos, com madeira muito bem integrada. Na boca, é um vinho volumoso, com acidez bem integrada, taninos firmes e bem presentes. As especiarias e os frutos vermelhos evidenciam-se. O final é longo, muito intenso e elegante.",
+      "price": 34.90,
+      "picture": "GiftBoxCasaFerreirinhaQuintadaLeda_1_5L.png"
+    },
+    {
+      "id": 2,
+      "name": "Maçanita Tinto",
+      "producer": "Irmãos Maçanita",
+      "grapes": "Touriga Nacional, Vinhas velhas, Sousão",
+      "year": "2019",
+      "description": "De cor ruby violeta concentrada, nariz intenso e maduro com notas florais de fruto preto. Encorpado, redondo e com boa persistência.",
+      "price": 27.50,
+      "picture": "MacanitaTinto2018.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Bafarela Reserva",
+      "producer": "Brites Aguiar",
+      "grapes": "Touriga Nacional, Touriga Franca, Tinta Amarela, Tinta Roriz",
+      "year": "2018",
+      "description": "O Bafarela Reserva Tinto 2018 é um vinho de carácter duriense bem marcado que reflete toda a riqueza e qualidade da região. Com uma grande aptidão gastronómica, torna-se numa escolha ideal para antes e durante as refeições.",
+      "price": null,
+      "picture": "bafarelaReserva.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Beyra Grande Reserva Tinto",
+      "producer": "Rui Madeira",
+      "grapes": "Tinta Roriz, Tempranillo, Touriga Nacional, Jaen, Mencia",
+      "year": "2018",
+      "description": "O terroir único e o estágio em barricas de carvalho americano durante 14 meses, resultam neste Beyra Grande Reserva Tinto 2017 com um aroma explosivo, muito intenso, frutos silvestres e especiarias com notas intensas de alcaçuz em perfeito equilíbrio com notas discretas de barrica a tosta e baunilha.",
+      "price": 9.90,
+      "picture": "beyraGrandeReserva.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Marquês de Marialva Baga Reserva",
+      "producer": "Adega Cooperativa de Cantanhede",
+      "grapes": "Baga",
+      "year": "2015",
+      "description": "Predominante em frutos de polpa vermelha maduros e geleia dos mesmos. Apresenta nuances tostadas e de moca.",
+      "price": 31.50,
+      "picture": "MarquesMarialva2015.png"
+    },
+    {
+      "id": 6,
+      "name": "Portocarro Partage Touriga Nacional",
+      "producer": "José A.L. Da Mota Capitão",
+      "grapes": "Touriga Nacional",
+      "year": "2011",
+      "description": "Cor granada carregada, aromas de geleia de ameixa e frutos vermelhos maduros. Leve percepção de especiarias e chocolate. Na boca tem uma grande elegância, é bem equilibrado e tem uma longa persistência. Um vinho muito distinto.",
+      "price": 43.90,
+      "picture": "HerdadePortaCarroTourigaNacional.jpg"
+    }
+  ]
