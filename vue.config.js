@@ -31,7 +31,7 @@ module.exports = {
   configureWebpack: {
     devtool: 'source-map'
   },
-  publicPath: process.env.NODE_ENV !== 'production'
-    ? '/'
-    : '/wine-beer-cellar-vuejs/'
+  publicPath: process.GITHUB_ACTIONS === true
+    ? '/wine-beer-cellar-vuejs/'
+    : '/'
 }
