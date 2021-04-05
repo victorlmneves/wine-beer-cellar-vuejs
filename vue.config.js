@@ -32,6 +32,6 @@ module.exports = {
     devtool: 'source-map'
   },
   publicPath: process.env.NODE_ENV !== 'production'
-    ? '/prodution/'
-    : '/not-production'
+    ? '/'
+    : '/wine-beer-cellar-vuejs/'
 }
