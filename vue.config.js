@@ -31,7 +31,7 @@ module.exports = {
   configureWebpack: {
     devtool: 'source-map'
   },
-  publicPath: process.GITHUB_ACTIONS === true
+  publicPath: process.env.GITHUB_ACTIONS === true
     ? '/wine-beer-cellar-vuejs/'
     : '/'
 }
