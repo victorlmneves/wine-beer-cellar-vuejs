@@ -31,7 +31,5 @@ module.exports = {
   configureWebpack: {
     devtool: 'source-map'
   },
-  publicPath: process.env.NODE_ENV === 'production'
-    ? process.env.BASE_URL
-    : '/'
+  publicPath: process.env.NODE_ENV === 'production' ? './' : '/'
 }
