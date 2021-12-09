@@ -39,15 +39,17 @@ ___
 
 ✓ Tested 447 dependencies for known issues, no vulnerable paths found.
 
+-----------------|----------|----------|----------|----------|-------------------|
 File             |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
 -----------------|----------|----------|----------|----------|-------------------|
-All files        |    73.33 |       50 |     62.5 |    73.33 |                   |
- Filters.vue     |       50 |      100 |    33.33 |       50 |             52,56 |
- WineDetails.vue |    81.82 |       50 |       80 |    81.82 |             30,52 |
+All files        |       80 |      100 |     62.5 |       80 |                   |
+ Filters.vue     |       50 |      100 |    33.33 |       50 |             49,53 |
+ WineDetails.vue |    90.91 |      100 |       80 |    90.91 |                52 |
+-----------------|----------|----------|----------|----------|-------------------|
 
 Test Suites: 4 passed, 4 total
-Tests:       11 passed, 11 total
-Snapshots:   0 total
-Time:        3.908s
+Tests:       13 passed, 13 total
+Snapshots:   1 passed, 1 total
+Time:        7.057s
 Ran all test suites.
-✨  Done in 11.50s.
+✨  Done in 9.65s.
