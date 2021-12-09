@@ -39,7 +39,6 @@ ___
 
 ✓ Tested 447 dependencies for known issues, no vulnerable paths found.
 
------------------|----------|----------|----------|----------|-------------------|
 File             |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
 -----------------|----------|----------|----------|----------|-------------------|
 All files        |       80 |      100 |     62.5 |       80 |                   |
