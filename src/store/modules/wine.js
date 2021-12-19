@@ -7,22 +7,14 @@ export default {
 
   getters: {
     wineList: (state) => {
-      const wineList = state.wineList
+      console.log('state wineList', state.wineList)
 
-      return wineList
+      return state.wineList
     },
 
-    wineListAux: (state) => {
-      const wineListAux = state.wineListAux
+    wineListAux: (state) => state.wineListAux,
 
-      return wineListAux
-    },
-
-    wineDetails: (state) => {
-      const wineDetails = state.wineDetails
-
-      return wineDetails
-    }
+    wineDetails: (state) => state.wineDetails
   },
 
   mutations: {
@@ -40,11 +32,6 @@ export default {
     SET_WINE_ITEM(state, wine) {
       localStorage.setItem('wineDetails', JSON.stringify(wine))
       state.wineDetails = wine
-    },
-
-    SET_WINE_SORT(state, wines) {
-      localStorage.setItem('wineList', JSON.stringify(wines))
-      state.wineList = wines
     }
   },
 
@@ -60,53 +47,25 @@ export default {
       }
 
       try {
-        console.log('--------', this.$http)
         const response = await this.$http.get('data/wineBeerList.json')
-        console.log('then', response)
         const { data } = response
-
-        console.log('data', data)
 
         commit('SET_WINE_LIST', data)
         commit('SET_AUX_WINE_LIST', data)
       } catch (error) {
         console.log('catch', error)
       }
-
-      // return response.data
-
-      // return this.$http
-      //   .get('data/wineBeerList.json')
-      //   .then((response) => {
-      //     console.log('then', response)
-      //     const { data } = response
-
-      //     console.log('data', data)
-
-      //     commit('SET_WINE_LIST', data)
-      //     commit('SET_AUX_WINE_LIST', data)
-      //   })
-      //   .catch((error) => {
-      //     console.log('catch', error)
-      //     // throw error
-      //   })
     },
 
     async getById({ commit, dispatch, state }, id) {
-      console.log('id', id)
       let wines = JSON.parse(localStorage.getItem('wineList'))
-
-      console.log('------- 1 wines -------', wines)
 
       if (!wines) {
         await dispatch('getAll')
         wines = state.wineList
-        console.log('------- 2 wines -------', wines)
       }
 
       const wine = wines.find(wine => wine.id === Number(id))
-
-      console.log('------- 3 wine -------', wine)
 
       commit('SET_WINE_ITEM', wine)
     },
@@ -123,7 +82,7 @@ export default {
         }
       })
 
-      commit('SET_WINE_SORT', sortedWines)
+      commit('SET_AUX_WINE_LIST', sortedWines)
     },
 
     filterBY({ commit }, text) {

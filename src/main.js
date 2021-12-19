@@ -14,8 +14,6 @@ store.$http = axios.create({
   }
 })
 
-console.log('***main***', store)
-
 // Api URL
 store.$apiUrl = process.env.BASE_URL;
 axios.interceptors.response.use((resp) => {
