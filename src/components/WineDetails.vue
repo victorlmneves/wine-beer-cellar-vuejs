@@ -26,8 +26,6 @@ export default {
 
   filters: {
     currency: value => {
-      console.log(value)
-
       if (!value) {
         return 'N/A'
       }
